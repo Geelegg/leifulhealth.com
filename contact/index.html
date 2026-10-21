@@ -2,32 +2,38 @@
 <html lang="en-AU">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Contact | Leiful Health</title>
-<meta name="description" content="A science-led six months with Guy Leggett, built around your body, your week and the life you're not willing to give up.">
+<meta name="description" content="Six months, one-on-one with Guy Leggett, built around your body, your week and the life you already have.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://leifulhealth.com/contact/">
 <link rel="icon" href="/assets/leiful-court-favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/leiful-court-app-icon.svg">
+<meta name="theme-color" content="#F5F5EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141A16" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Contact | Leiful Health">
-<meta property="og:description" content="A science-led six months with Guy Leggett, built around your body, your week and the life you're not willing to give up.">
-<meta property="og:image" content="https://leifulhealth.com/img/workshop-guy.jpg">
+<meta property="og:description" content="Six months, one-on-one with Guy Leggett, built around your body, your week and the life you already have.">
+<meta property="og:image" content="https://leifulhealth.com/img/leiful-beach-dusk-1920.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
-<body>
-<div class="draftbar">Draft preview: copy and details are still being finalised.</div>
-<header class="site"><div class="wrap">
-<a class="logo" href="/"><img src="/assets/leiful-court-mark-horizontal-on-light.svg" alt="Leiful Health"></a>
-<nav class="main"><a href="/your-season/">Your Season</a><a href="/the-club/">The Club</a><a href="/about/">About Guy</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a class="btn" href="/apply/">Apply</a></nav>
-<details class="menu"><summary>Menu</summary><nav><a href="/your-season/">Your Season</a><a href="/the-club/">The Club</a><a href="/about/">About Guy</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a class="btn" href="/apply/">Apply</a></nav></details>
+<body class="ribbon-light">
+<header class="hdr"><div class="wrap">
+<a class="logo" href="/"><img class="logo-dark" src="/assets/leiful-court-mark-horizontal-on-light.svg" alt="Leiful Health"><img class="logo-light" src="/assets/leiful-court-mark-horizontal-reversed.svg" alt="Leiful Health"></a>
+<button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
 </div></header>
-<main>
-<section><div class="wrap narrow"><span class="eyebrow">Contact</span><h1>Get in touch</h1><p>Questions about your Season, or want a single consult first? Send a note.</p><form class="form" onsubmit="event.preventDefault();this.querySelector('.form-note').hidden=false"><label>Name<input type="text" name="name"></label><label>Email<input type="email" name="email"></label><label>Phone (optional)<input type="tel" name="phone"></label><label>What's this about?<select name="topic"><option value="">Choose…</option><option>A question about the Season</option><option>Book a single consult ($390, one hour on Zoom)</option><option>Something else</option></select></label><label>Message<textarea name="message" rows="4"></textarea></label><button class="btn" type="submit">Send</button><p class="form-note" hidden>This is a draft: the form isn't connected yet.</p></form></div></section>
+<div class="mnav" id="mnav" aria-hidden="true" aria-label="Menu">
+<nav aria-label="Main"><a href="/your-season/">Your Season</a><a href="/the-club/">The Club</a><a href="/about-leiful/">About Leiful</a><span class="sep"></span><a class="sub" href="/faqs/">FAQs</a><a class="sub" href="/contact/" aria-current="page">Contact</a></nav>
+<div class="mfoot"><img src="/assets/leiful-court-mark-horizontal-on-light.svg" class="logo-dark" alt=""><img src="/assets/leiful-court-mark-horizontal-reversed.svg" class="logo-light" alt=""><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div></div>
+<div class="mscrim" aria-hidden="true"></div>
+<main id="top">
+<div style="height:clamp(24px,4vw,48px)"></div><section class="sec " id="form"><div class="wrap r15"><div class="stack s"><span class="lbl">Contact</span><h2 class="h2">Get in touch.</h2><p class="body">Questions about your Season, or want a single consult with Guy first? An hour of expert advice on your health, $400. Send a note.</p></div>
+<form id="contact" data-draft novalidate><label for="f-name">Name<input id="f-name" type="text" name="name" autocomplete="name" required></label><label for="f-email">Email<input id="f-email" type="email" name="email" autocomplete="email" required></label><label class="full" for="f-phone">Phone (optional)<input id="f-phone" type="tel" name="phone" autocomplete="tel"></label><label class="full" for="f-topic">What's this about?<select id="f-topic" name="topic"><option value="">Choose…</option><option>A question about the Season</option><option>Book a single consult ($400, one hour)</option><option>Something else</option></select></label><label class="full" for="f-message">Message<textarea id="f-message" name="message" rows="4"></textarea></label><label class="check full"><input type="checkbox" id="f-consent" name="consent" required> <span>I agree to be contacted about my enquiry. See the <a href="/privacy/">privacy policy</a>.</span></label><label class="hp" aria-hidden="true">Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label><div class="full"><button class="btn" type="submit">Send</button></div><p class="note" hidden>Thanks. This is a draft site, so the form isn't connected yet: nothing was sent.</p></form></div></section>
 </main>
-<footer class="site"><div class="wrap">
-<div class="cols"><div><img src="/assets/leiful-court-mark-horizontal-reversed.svg" alt="Leiful Health" style="height:44px;width:auto;margin-bottom:14px"><p style="opacity:.8;max-width:320px">Health, done properly. Science-led. Life-first.<br><em>She, done properly.</em></p></div><div><h4>Leiful</h4><ul><li><a href="/your-season/">Your Season</a></li><li><a href="/the-club/">The Club</a></li><li><a href="/about/">About Guy</a></li><li><a href="/journal/">Journal</a></li></ul></div><div><h4>Start</h4><ul><li><a href="/apply/">Apply</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/contact/">Contact</a></li><li><a href="/#list">Join the list</a></li></ul></div><div><h4>Family</h4><ul><li><a href="https://guyleggett.com.au/">Guy Leggett</a></li><li><a href="https://fiturbanpro.com/">For men: Fit Urban Pro</a></li><li><a href="#">Instagram (coming soon)</a></li><li><a href="#">Facebook (coming soon)</a></li></ul></div></div>
-<div class="legal">© 2026 Guy Leggett · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · by Guy Leggett</div>
+<footer class="ftr deep"><div class="wrap">
+<div class="cols"><div class="stack s"><a class="logo" href="/"><img src="/assets/leiful-court-mark-horizontal-reversed.svg" alt="Leiful Health"></a><p class="body" style="max-width:32ch">Health, done properly.<br>Nutrition. Movement. Mindset. Data. Guy.</p></div><div><span class="lbl">Leiful</span><ul><li><a href="/your-season/">Your Season</a></li><li><a href="/the-club/">The Club</a></li><li><a href="/about-leiful/">About Leiful</a></li><li><a href="/free-guide/">Free guide</a></li></ul></div><div><span class="lbl">Help</span><ul><li><a href="/apply/">Apply</a></li><li><a href="/faqs/">FAQs</a></li><li><a href="/contact/">Contact</a></li><li><a href="/data-deletion/">Delete my data</a></li></ul></div><div><span class="lbl">Family</span><ul><li><a href="https://guyleggett.com.au/">Guy Leggett</a></li><li><a href="https://fiturbanpro.com/">For men: Fit Urban Pro</a></li></ul></div></div>
+<div class="legal"><span>© 2026 Guy Leggett</span><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><span>By Guy Leggett</span><span>Draft preview: not yet public.</span></div>
 </div></footer>
+<script src="/assets/site.js" defer></script>
 </body></html>

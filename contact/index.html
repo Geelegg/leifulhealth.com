@@ -3,37 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contact | Leiful Health</title>
-<meta name="description" content="Six months, one-on-one with Guy Leggett, built around your body, your week and the life you already have.">
+<title>Leiful Health</title>
 <meta name="robots" content="noindex, nofollow">
-<link rel="canonical" href="https://leifulhealth.com/contact/">
 <link rel="icon" href="/assets/leiful-court-favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/leiful-court-app-icon.svg">
-<meta name="theme-color" content="#F5F5EF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141A16" media="(prefers-color-scheme: dark)">
-<meta property="og:title" content="Contact | Leiful Health">
-<meta property="og:description" content="Six months, one-on-one with Guy Leggett, built around your body, your week and the life you already have.">
-<meta property="og:image" content="https://leifulhealth.com/img/leiful-beach-dusk-1920.jpg">
+<meta name="theme-color" content="#17261E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css?v=d3c986a7">
+<style>
+html,body{height:100%}
+body.lock{margin:0;min-height:100%;display:grid;place-items:center;background-color:var(--deep);background-image:var(--tex-deep);color:var(--ondeep);font:400 18px/1.6 var(--fb);padding:24px max(24px,env(safe-area-inset-right,0px)) 24px max(24px,env(safe-area-inset-left,0px))}
+.gate{width:min(100%,380px);display:grid;justify-items:center;gap:22px;text-align:center;visibility:hidden}
+.ready .gate{visibility:visible}
+.gate img{height:calc(var(--logoh) * 1.5);width:auto}
+.gate .rule{width:36px;height:1px;background:var(--hi)}
+.gate .lbl{color:var(--ondeepm)}
+.gate p{margin:0;color:var(--ondeepm);font-size:1rem}
+.gate form{display:flex;width:100%;border-bottom:1px solid color-mix(in srgb,var(--ondeep) 40%,transparent);margin-top:8px}
+.gate input{flex:1;min-width:0;background:transparent;border:0;color:var(--ondeep);font:inherit;padding:12px 4px;outline:none;letter-spacing:.06em}
+.gate input::placeholder{color:var(--ondeepm)}
+.gate button{background:none;border:0;color:var(--ondeep);font:600 .95rem var(--fb);cursor:pointer;padding:12px 4px;display:inline-flex;align-items:center;gap:8px}
+.gate form:focus-within{border-color:var(--ondeep)}
+.gate .err{color:var(--hi);min-height:1.6em;font-size:.9rem}
+.gate .shake{animation:shake .4s}
+@keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+@media (prefers-reduced-motion:reduce){.gate .shake{animation:none}}
+</style>
 </head>
-<body class="ribbon-light">
-<header class="hdr"><div class="wrap">
-<a class="logo" href="/"><img class="logo-dark" src="/assets/leiful-court-mark-horizontal-on-light.svg" alt="Leiful Health"><img class="logo-light" src="/assets/leiful-court-mark-horizontal-reversed.svg" alt="Leiful Health"></a>
-<button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
-</div></header>
-<div class="mnav" id="mnav" aria-hidden="true" aria-label="Menu">
-<nav aria-label="Main"><a href="/your-season/">Your Season</a><a href="/the-club/">The Club</a><a href="/about-leiful/">About Leiful</a><span class="sep"></span><a class="sub" href="/faqs/">FAQs</a><a class="sub" href="/contact/" aria-current="page">Contact</a></nav>
-<div class="mfoot"><img src="/assets/leiful-court-mark-horizontal-on-light.svg" class="logo-dark" alt=""><img src="/assets/leiful-court-mark-horizontal-reversed.svg" class="logo-light" alt=""><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div></div>
-<div class="mscrim" aria-hidden="true"></div>
-<main id="top">
-<div style="height:clamp(24px,4vw,48px)"></div><section class="sec " id="form"><div class="wrap r15"><div class="stack s"><span class="lbl">Contact</span><h2 class="h2">Get in touch.</h2><p class="body">Questions about your Season, or want a single consult with Guy first? An hour of expert advice on your health, $400. Send a note.</p></div>
-<form id="contact" data-draft novalidate><label for="f-name">Name<input id="f-name" type="text" name="name" autocomplete="name" required></label><label for="f-email">Email<input id="f-email" type="email" name="email" autocomplete="email" required></label><label class="full" for="f-phone">Phone (optional)<input id="f-phone" type="tel" name="phone" autocomplete="tel"></label><label class="full" for="f-topic">What's this about?<select id="f-topic" name="topic"><option value="">Choose…</option><option>A question about the Season</option><option>Book a single consult ($400, one hour)</option><option>Something else</option></select></label><label class="full" for="f-message">Message<textarea id="f-message" name="message" rows="4"></textarea></label><label class="check full"><input type="checkbox" id="f-consent" name="consent" required> <span>I agree to be contacted about my enquiry. See the <a href="/privacy/">privacy policy</a>.</span></label><label class="hp" aria-hidden="true">Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label><div class="full"><button class="btn" type="submit">Send</button></div><p class="note" hidden>Thanks. This is a draft site, so the form isn't connected yet: nothing was sent.</p></form></div></section>
+<body class="lock">
+<main class="gate">
+<img src="/assets/leiful-court-mark-horizontal-reversed.svg" alt="Leiful Health">
+<span class="rule" aria-hidden="true"></span>
+<span class="lbl">Private preview</span>
+<p>This site isn't open yet.</p>
+<form id="lockform"><label for="lockpw" class="hp">Password</label><input id="lockpw" type="password" autocomplete="current-password" placeholder="Password" aria-label="Password" required><button type="submit">Enter <span aria-hidden="true">→</span></button></form>
+<p class="err" id="lockerr" role="alert"></p>
+<noscript><p>This preview needs JavaScript switched on.</p></noscript>
 </main>
-<footer class="ftr deep"><div class="wrap">
-<div class="cols"><div class="stack s"><a class="logo" href="/"><img src="/assets/leiful-court-mark-horizontal-reversed.svg" alt="Leiful Health"></a><p class="body" style="max-width:32ch">Health, done properly.<br>Nutrition. Movement. Mindset. Data. Guy.</p></div><div><span class="lbl">Leiful</span><ul><li><a href="/your-season/">Your Season</a></li><li><a href="/the-club/">The Club</a></li><li><a href="/about-leiful/">About Leiful</a></li><li><a href="/free-guide/">Free guide</a></li></ul></div><div><span class="lbl">Help</span><ul><li><a href="/apply/">Apply</a></li><li><a href="/faqs/">FAQs</a></li><li><a href="/contact/">Contact</a></li><li><a href="/data-deletion/">Delete my data</a></li></ul></div><div><span class="lbl">Family</span><ul><li><a href="https://guyleggett.com.au/">Guy Leggett</a></li><li><a href="https://fiturbanpro.com/">For men: Fit Urban Pro</a></li></ul></div></div>
-<div class="legal"><span>© 2026 Guy Leggett</span><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><span>By Guy Leggett</span></div>
-</div></footer>
-<script src="/assets/site.js?v=d3c986a7" defer></script>
+<div id="lockdata" hidden data-s="1MPAG/9dZSGj0MlX08kb9w==" data-n="YWI6CJVCk0T+tXo+" data-c="VBqKq0DegSo2xoCaUBaSRa4fUXCDpuceay+sF5/esod9WRp7LR3TVfdQcJnqap/E6x9nuStUvYr0jYmZxLrpr3ClhCPnqpXLTaP4hb3gek3iMZUfLl2Fuiy1QyVy78PlEMoYac7ZORe23h6bhcJQNVL/OoC3hrSL/wfHx65XZ0fDl7j5YAw63duvE2C1+hlthbxEn3xf7pHkh9YCNxL65Orqh2lomoPQ0KzkC6GbAGibDEVqBzzbhCDQS24ug9efRS9wOizav41qXXhg3EzWjT5uGdN19yGt2Gc1S3d0mbbRFUbTZACDg/GYuhGtLOLu7l3Xfl6FW5jIFByRIBVx3pIN06iX4fOlTMTEUdxHFu+6VfHGuxL2VubU6S0rDgd1x4QPEZUqZ4nBkRMRnaxwarpqvgGF7bG8f6W4NOkIqJBKSyfKUgIQoyU418EkcB5RDB0fN083UhFESEoLTh7aeQgbWOyfMycBk6I+SGoo5y9HMxe3DOnLgg1Nh6KaJzxjYS4wFQ2QV/Zsin23VQLGcRQOkieImFT6t7PsQUWSqsbfaxADTaUosDKtWtQzsqxnE+F1FiaBvSnkWpU0M/p8rOGY1io0+13KjGHHk63Tlx2MQpBRliYVxJd2is2doD1A0z60U0O0X/b9Tgoa8BXHtSf/1OoprrhUAFUk6E2u6YALXdEEB8C4Tc8MmMgrZlK7yEECNVtESI42d09dAa4kZ1PW2rxXcjX0eR2CxMhv3iFA288F8Es4f2EsD9s9wVlHGs3vrMObTeHxE4+6r9pgb0bz9E8UI4+pUfyMkOwWeWvwhSGOAn4nISKnQB0DjEBGpY/q0M5c9crysozhIvUnf47mf7BB8jTj/j13IqX+dP1kuG2UCcwkjcsi3JHFN3HcrGOgdVTwf+vZCjNTM9T4FUJT4JoqeKsjw2f7fHjbQUjysKNXfagQrt0KPFMdf88Kkf61/H3eKS8adiqRNMl7/qK+W6cKv6J+p4fU5SGBbfaieMcTiS8tzi+eYXqdrPeoSlAYMyNkfgW0SCxA8VMT3U+wrba8R+61wgxBPqVRabn/QG5j+kfnOb//f8TKo9aZGpA60QdXXCuXwmW8xTTv+6ojCIxCaTsi7lHBW7SwJipPRbZSZnnwwf9MVyK2C0wgXb1y55NBcVlQdh3DnkU80fRcAymAPIZOSBMI2LB8caDg4drxEbkBVmD77pZkQbffBsi1lx8wxbWLiCypvJxpuDaUFwlRn70YobOOK+PayBmV0sPkB/UsBUU6mJKP1303h7QRifuMrXLPYJk4vKiAl3d4hi9wSCKZg5azBVxb5ixZo8hyHS0z3xQEBbyRCT/j1H9v9hiTk+bI54R5apTnQVcJ+wmMonlrWntjdTDny+n9bqJU21xVMV/GGWRA5jC6Bn3Zm+8H5HFMGDdqIsKzbkO0kLSvlV4BWXy764lydEVN0wqk8G3sV0IKrFmbfZ2Cplfz+hK8Lugxn8XzdMe8MA/3X1E+ZaC8xCWKBhnytPT8MdiLNBg49EUof+Hk2SOvm8llB6azHTAg5VrIVcJSql33y7Kt94eHoeJhBYhPWqxY3F6YkCfba2m4BDDzmU/XE/sZrLeWN8mWKc+bn/jHpsEstNebVMfik5k15VaEqjKxyvBHh0xlNFpT4J21xrSuYd/p3Oru20ziGALmK9FRqRDMMBEY9BBjDfXsAnGmHubqNH7cj6yugDPTTL/ZjDYg9cwxDV3RPvaCy0QyOteUKxPuhMmXBg41OFP/y6tcD4kzlfUMYJJz1RBHekXPaXRFCsGejIxQLc0tF4ZobKa1cATFqwZDkioEJxPsI/g770FK3kajZXY3k15hJm8Cmk/nHmGvFMi3WeMNz/zCyR5uHX5FbRcGXsoz6AxR2+RjZiTVS+yCj60g9rdZj3Eo2gmSMW+V6XsbpZ9Zt2zwt4bpAnug0duiFVRFqpi75fP50+N2R1HAvuW6Fsks3Dxgh+WjKOrUHbZbsjDQfEkBsx/lSYX4PmSY8RjnPt3VGSRImh29L4imxBZv2eJ4UzJJk0xpZGLcDHRj4ZUs3eiWASSaRXVotPCEucvpdbHz7wq2J+Xz+CS+GtyqDL6ebLz1pmay5kK5i4JoxRlqk9qJGRsWwgSjLDVC+YVbYp1YwkGTJMr6MvmnzCjzuejMdIm/kLR00qEn87MDupRsheSFagb42he0ARklYeLaLhEs5wYQdfPb9a/KRyLuGdWFtCbuh4aVOrSo1QqaIySHEgkvVu4izRBfRCOUGPsV+RRp0MHRVB557svBEm0Fr+sLL2T3RpZ2hfWP2WiZj8bZLO19/ovMipaEIULTqLwSp67dDT9sm66EOYlDVSeronyISt4TcXdn2HLYVrcjQIjHX1j6sVQw4rszGcGEzpI9O03w8x3XREKyGw2XNx36K+oPpBJXSytX9xwQCy0O8tyoHVjsDcz5V9HGpX2vWXGb/OGSs73fiQGnQWdtp08JREpPsGwXnOpPI8xgig/Mgq26H+xAD/w3Nyq9o4UQ0j1OCeUcgQAp4EOy4j9QmzE2XNC6dSU7KkdGz0/ZSyxQY1/WCJkQSoZJurRLxdARp1IpE/WP3bZhT8DDYR7C3zPpzgOWhWzHPpChyLmFj8LBOksZ/RyCRGYV68Rlq/p9vSlxSHcRY489QzkDisvd8Yrt9POyjV5NT1mnrcOd6QXb+bMC22Jww/fe1svohklt1/AdHzVkAe2xtSR8cpXqkLZx6mlAAFn8x1qKcCJxkBOx4SrkAWSmjShSQ5fST5opnvo6OOvIlQH6tXuT94ancFtWWMoQOEPWdu1k2HLH96JQFZj0dYw+AvefNilbQEaXe3V8nk63oq+tQ6psmioza8EL0g6Bp8Wjq2sS+u+HL7HK6Uk4PhY88K9rLPNKNW5Xk2DHSfsleZJpShKZ5Ao1/nQ11tF1hCfxiOsmW9Vy1JKcsaLMWCVbZFq/4+Vj4vMlHN1biFt+9TIJTrlRnU0oAobm8/0JSrYXBSxxDif36JG6druf+NMxbbmTFAbfbTHJ+NxzeBsHyG0ZZRHoommaZ6wCHY8uqKMhF7vwtn4uViBD3ODhSN2DYum158QUkznlpqbcRAi4ZxDoPAcvobkc/7fztXZJeRCxfpw8TVPqSkmh9kk7A3H3D5+ZbMpSXHBYwTU+ki8ssXvv53sh9ZW9PQtLyi8H4ke03+oCwEA+vfqtrC2FBgvfuCXipDcHiKC2cXwqE7F7PGXNrLObDThykMwJqT0ECcusplPr0Jsjfls5i6P3Jt+8LRK2cIpR9C8levBjz8kgkD2hbh3nXn026SJvyMZM/Ll+VbXzFP1sgCyF5HI8MaZVy1yOPGER8vtautgRrz0F3wNwyJRTNhniaLfJ8z9GEV9HvVHeJfcwkVDeKS0CPX8dE9yFDG/IdCVFSiz75qhoGkJOI5Ozi/5RvNtXMM1DFP2CiE4e6SN50y4zAQkZprTYQp278lURvOvPmLEf6rNO9AHZqCj2l/zG4kcbD0wLkSWcnxLinst9XhbaIEo1+vtZ3C1Sj3iDp/CcSO44Tz2okSJKsZlY4WYnEz6eF7hBbM04mKDevg3q2eX41eC8xYcBIltb1Z+fSEtVwC61pxzJebQvKd2k+HlnLsauA0+bmVITMIhGPutdXs45xZ9Q4sGzFZtNzYTSGr6FIL1Aj77yJQn6pY0oq0BXLaYz50zMj+gXrwp68TYRwU2CUUjL6WBvW3tTcopV6cnA6P36g0AsysAKN7orhSDhP+IG6l5OkzAwUS+DGXfbPOU+BHF/807PEAIDr+nJWv0tnIHXTL4PiP+oms766/KBXopLUyVRpCmjLgS4Ebqd8hgk939WHwY2STpGmvA0koUy2evZMRjqllnnMMZcTMqD0jcfD1JSw1JR24TdLww2R7VnqAOy2cWra2yXBebrd7STjr2RdltRcoZ1EGKSsnlSVuXCGZxu6uqERWxLfKGW22v5VWatgehQSCUSCYUqXjavAXLY59Cs0vx+SQfef+3+R1Jtj5OGz34OjZCULYWymIHsFvEU92x4LTbbsETyapvV8RhEF9bsktpM0WgLAqni9wl7CO/Ic28OjuMqkifMBrGnas+wzanqNhxHiGlYIK/8lpafLfjt6pBvJ6jvze6YgLFovvbTMXipEA+ux8yTCo1Z3dVCfB9NjCRlmEqSaGZH4iPGCFDf9Rzk0IBNK3U2UP4vwzGrERxfFavQmm5RAfwqRhHTf6TXpzTV0sqkxfdJFNiKxHIjgX8KOBQnopqRlj6f/0S+4KOyxQq0NRjCZJBa6o9s+NJtmdyi79XZBcCqeefOUcBZ+AUzIxjZbfvRiyMJ/Y1XHg1eBaex2+YVkibO6CqMD04sIjQRNk1WshMQZNgtWYeX9VAhVvO+CTMChGD5Nx5Nh6FZAtNv1bin424m+Jm0TjPacpyqGbvUEDFKDfTVwiEVziX5z/pw3xHZaHVQSY+L5JmqJviseW6TTpztwIsUD1volOVDAC6rdfs92BZpyWP4w/bNAeksDvdfpMVhMFPklwNofgDq0zd9p9r4L7ZvHAImcpY3IHqIifxrjQNifYSkaJ+K03o5sjQ0B9jrqsN34nfhRLBxAl/L8pKKMsBl3FQC9ilOBEUI5PczEbjFEwSSvwNkLFkzYzJIFfvv5iC85xzd6GQh6q8R0QbJ1GRC3vybFDBW9tXhCDvD94z/chNc5l4ornuitpvUt9d3GGiIy9U9idqiH5+XhRmgKOBTKvBTTOtwfbqo1Bfg/EPsVIU68EoQGP2D2g+eZ/arN0Ng9OkeaycA+P33kUkh7wpQOc7/gCuHx6qsR3PP2fQfcdYiO1OgPCCnVA/gHV5jqlviHnzOX9Dvxj4xdlE+CZZgc/hebZdmRXmSaGSGK3w0ngH6M/GK3zlf+vqoI/r2lNteuwvNo8CrhjzhgbEvUHkraXJoBJq0W0Hiy305om31chLhfE6Qy0UaYEzs1BDualUdns4QnToVEeVsEj9DLZiq1RPlKp72vc5rei+HBLbs4gpkPM3nUuWDQobrsZi8FQ++1DsC4m/zbN9vX04fF2ZLm8wRNzd7GjX+z32CZu8SroPJVOHodPZA1wFpJcX/iFggg+RuorHoXyR4/wYY995iVTLmcQ+wuPETyi+87Zy8uExJeIS8vailOgprqGyv/UTMXSAV03Q9zAL2NFvdPp2rHRgCb1sORDMCorfSNXEF8kc5WMS3N/Q3oZcRAfYzus3pEXsDPHGdwxHmE/OOX5M3SsEdoqZh+FCVZpklZJPNxnPz/dsrf/iD72ohXb4Zrf2QeQv+bVb0wqjtu2rsG2t8sv7f3X5jHt3ZblPAHhmrKIL1g9IW9Ml+UXOdsk7Pf9TAyBCUiTAaJNGPDmpaU4vZEjnEv/a+JJJont7QifmLXLqaQFgJA0efAmGoYYpCDb9xFnQhf04no3OqpWifM29q79KrXemtpDYcO+0Hq/UrEED3O/+iNKnPiiHWMQklEpgjUjjpn0zRs2/7KnQuZQ8O6j4UgIqtBqr8HW5On0WClg13hXTUKKnSWp/uzssEUiLqAbby9mkbkZxArKzy25wpWRGUE1A2GV7k5r48XAKLRi5sNJ7eY6en3OdtL4FaJzNWR6ex3ei/S2VRY2o2E88x1JjLec5v49KfzKfPeQiNQ9zjqkQwwYCAmH1j8LqFEwZKfAlhLel/mSxTmJxVB7q9vWI4KhoewyL8CgKwOmQx6cSJG6fN7UBHtyRgEAqoiOGWL1n6mWlfaPaT4+dcXALmH3X2DHEoeHiJx53UHt9mVIFNFAbj0TH/c2fvIvk989bI8Hi63VQ9QfvJ475WiZpmvEPBp1z4nsTkKMG8o2CtwLk731OdIyjDADyLjkeKAgaZkd9EV6ioB7DAWeskvEgEGg9For4trLNPAdq/d0qodZJRW88BExBanJl3qgQEK8AdMW67nF7uHtrTXrEvTLqqOQouaWs1Y+nZLaYsVH3b5nu7RIWduUaL/OjACSP0eBth93fCH0I8aXWKanabTR4unNEeG+6y8lckDTAzlmdN1RiOzXtr7E3vh3EAjPFE2IywcDpwIl4dxBut29hlYXMmfJo9LuWlG8rsnS0lRMfzxHH2erZAa1vcTlaXq6/A3833u3uaPRhMvrQXtkzc4gERS6YuJLnR69/BA+XuSGRgmCD8J7Vbw+5CN0GILhw47VJm8Am3n0jWZpmTDSSx56TIMMbFAySEOV+oFHTYo2x31HEXzDXBnEYvrgTwa5kqsomYRFYU0JfszK9990uCAtkBwraZaWtJQK6MC/5SEp9zNeiFhy1B5+xtByEFzy0FuFx5I/Sx6br0n5d9+wdHuCNvXE0cuUOV8OWFYrlPwd9/3V3+nYayz2lIkLBV+cdteklpgXXPpB33mZvkDm7hYgUMc6Zhyqy3CiE80+tMH4C9L5rn151Uwe53h+dvgiY5U3CesOmN12bTuccM/mpZboA398ky8vVaiGuvykSMaFchVKQPx8vsS2YiwTU61+5FebYHly+2RBtss+zLy36NPMgbFdocNTSMzaFQoewYL8Xuf2hN8LowASeahc7Qx/G52aQv+Jjk70f/l5XoRHmvBcZLtzh3QP4VRd33RtQjnv06kjI2/csHQFrmG7qrqgJK3guPJFugygkS/XGT2Ec44B+7kROZyfIGTvhC/6IEvAidXUpWNOWBytWQCk+QZmdoYn3GXe1UxjM9F+EgqwuMwMHVKwwDB1yp8iN92wKxfrtjXLnEYDNSEHX+6+kxnZ0hSuL3jA6d9VxUvZtc/1CkipEPg+WWMKkOUeR3QJ2K3+aRRV0NmFQtVYxlXzB+eHfKIjGBeT0yQzX0ncQP0XQuKtzj3E81q3fT+veh5ClzupKt+U/wUugU+LB8uUsTECHlPR2Q4j7yNSYGCnmUYYHMT7LTReHkP5EztIxZKJZQyJyvN2ooNXXwuQBz+Y6kNBjhHGv5WHqU8h8lOWROIeuzupqTBKlIsCDAQN2g2V3k56fbLYTsK8q15IBaguBJAJbBO8XGIEsUruww7qpdwraU3yYf/6D+zLHuyOTSBYHHc/2h4JVkAge7rxQz0j2IUYxykhbrCmC8fJU86OK6vco/gkqv2GDwOGHTAvuTpMqdkPg=" data-i="200000"></div>
+<script>
+(async function(){
+  var d=document.getElementById("lockdata").dataset, K="lk:"+d.s;
+  function b(x){return Uint8Array.from(atob(x),function(c){return c.charCodeAt(0);});}
+  async function show(key){var pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:b(d.n)},key,b(d.c));var h=new TextDecoder().decode(pt);document.open();document.write(h);document.close();}
+  try{var raw=localStorage.getItem(K);if(raw){await show(await crypto.subtle.importKey("raw",b(raw),"AES-GCM",false,["decrypt"]));return;}}catch(e){try{localStorage.removeItem(K);}catch(_){}}
+  document.documentElement.classList.add("ready");
+  var f=document.getElementById("lockform"),i=document.getElementById("lockpw"),err=document.getElementById("lockerr");i.focus();
+  f.addEventListener("submit",async function(e){e.preventDefault();err.textContent="";
+    try{var base=await crypto.subtle.importKey("raw",new TextEncoder().encode(i.value),"PBKDF2",false,["deriveKey"]);
+      var key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:b(d.s),iterations:+d.i,hash:"SHA-256"},base,{name:"AES-GCM",length:256},true,["decrypt"]);
+      var test=await crypto.subtle.decrypt({name:"AES-GCM",iv:b(d.n)},key,b(d.c));
+      try{var r=new Uint8Array(await crypto.subtle.exportKey("raw",key));localStorage.setItem(K,btoa(String.fromCharCode.apply(null,r)));}catch(_){}
+      document.open();document.write(new TextDecoder().decode(test));document.close();
+    }catch(x){err.textContent="That's not it. Try again.";f.classList.remove("shake");void f.offsetWidth;f.classList.add("shake");i.select();}});
+})();
+</script>
 </body></html>
